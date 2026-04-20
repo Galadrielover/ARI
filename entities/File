@@ -1,0 +1,41 @@
+{
+  "name": "File",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "File name"
+    },
+    "file_url": {
+      "type": "string",
+      "description": "URL to the uploaded file"
+    },
+    "file_type": {
+      "type": "string",
+      "description": "MIME type or extension"
+    },
+    "size": {
+      "type": "number",
+      "description": "File size in bytes"
+    },
+    "extracted_text": {
+      "type": "string",
+      "description": "Text content extracted from the file for AI context"
+    },
+    "summary": {
+      "type": "string",
+      "description": "AI-generated short summary"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "User or AI-generated tags"
+    }
+  },
+  "required": [
+    "name",
+    "file_url"
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "name": "DataSource",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "User-given name for this data source"
+    },
+    "source_type": {
+      "type": "string",
+      "enum": [
+        "google_sheets",
+        "csv_paste",
+        "json_paste",
+        "manual_table"
+      ],
+      "description": "Type of import"
+    },
+    "raw_input": {
+      "type": "string",
+      "description": "Raw CSV/JSON text pasted by the user or URL"
+    },
+    "columns": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Column / field names"
+    },
+    "rows": {
+      "type": "number",
+      "description": "Number of data rows"
+    },
+    "summary": {
+      "type": "string",
+      "description": "AI-generated summary of what this dataset contains"
+    },
+    "extracted_text": {
+      "type": "string",
+      "description": "Flattened text for full-text search and ARI context"
+    },
+    "tags": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "name",
+    "source_type"
+  ]
+}
