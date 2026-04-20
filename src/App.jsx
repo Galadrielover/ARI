@@ -7,7 +7,7 @@ import PageNotFound from './lib/PageNotFound';
 import { AuthProvider, useAuth } from '@/lib/AuthContext';
 import UserNotRegisteredError from '@/components/UserNotRegisteredError';
 import { ThemeProvider } from '@/lib/themeContext';
-import CommandPallette from '@/components/CommandPalette';
+import CommandPalette from '@/components/CommandPallette';
 import Layout from '@/components/layout/Layout';
 import Workspace from '@/pages/Workspace';
 import Files from '@/pages/Files';
