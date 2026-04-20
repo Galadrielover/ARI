@@ -14,7 +14,7 @@ const COMMANDS = [
   { label: 'Knowledge Graph', icon: Network, action: '/graph', type: 'nav' },
 ];
 
-export default function CommandPalette() {
+export default function CommandPallette() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
 
